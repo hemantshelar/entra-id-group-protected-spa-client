@@ -14,16 +14,16 @@ describe('AppComponent', () => {
     expect(app).toBeTruthy();
   });
 
-  it(`should have the 'msal-angular-tutorial' title`, () => {
+  it(`should have the 'entra-id-group-protected-spa-client' title`, () => {
     const fixture = TestBed.createComponent(AppComponent);
     const app = fixture.componentInstance;
-    expect(app.title).toEqual('msal-angular-tutorial');
+    expect(app.title).toEqual('entra-id-group-protected-spa-client');
   });
 
   it('should render title', () => {
     const fixture = TestBed.createComponent(AppComponent);
     fixture.detectChanges();
     const compiled = fixture.nativeElement as HTMLElement;
-    expect(compiled.querySelector('h1')?.textContent).toContain('Hello, msal-angular-tutorial');
+    expect(compiled.querySelector('h1')?.textContent).toContain('Hello, entra-id-group-protected-spa-client');
   });
 });
