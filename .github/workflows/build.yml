@@ -1,0 +1,17 @@
+name: Build Anuglar
+
+on:
+  push:
+    branches:
+      - main
+      - feature/002-component
+  pull_request:
+    branches:
+      - master
+jobs:
+  demo:
+    runs-on: ubuntu-latest
+
+    steps:
+        - name: Checkout code
+          uses: actions/checkout@v2
