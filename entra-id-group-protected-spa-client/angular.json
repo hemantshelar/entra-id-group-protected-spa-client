@@ -3,7 +3,7 @@
   "version": 1,
   "newProjectRoot": "projects",
   "projects": {
-    "msal-angular-tutorial": {
+    "entra-id-group-protected-spa-client": {
       "projectType": "application",
       "schematics": {},
       "root": "",
@@ -13,7 +13,7 @@
         "build": {
           "builder": "@angular-devkit/build-angular:application",
           "options": {
-            "outputPath": "dist/msal-angular-tutorial",
+            "outputPath": "dist/entra-id-group-protected-spa-client",
             "index": "src/index.html",
             "browser": "src/main.ts",
             "polyfills": [
@@ -29,25 +29,20 @@
             "styles": [
               "src/styles.css"
             ],
-            "scripts": [],
-            "server": "src/main.server.ts",
-            "outputMode": "server",
-            "ssr": {
-              "entry": "src/server.ts"
-            }
+            "scripts": []
           },
           "configurations": {
             "production": {
               "budgets": [
                 {
                   "type": "initial",
-                  "maximumWarning": "2MB",
-                  "maximumError": "5MB"
+                  "maximumWarning": "500kB",
+                  "maximumError": "1MB"
                 },
                 {
                   "type": "anyComponentStyle",
-                  "maximumWarning": "6kB",
-                  "maximumError": "10kB"
+                  "maximumWarning": "4kB",
+                  "maximumError": "8kB"
                 }
               ],
               "outputHashing": "all"
@@ -64,10 +59,10 @@
           "builder": "@angular-devkit/build-angular:dev-server",
           "configurations": {
             "production": {
-              "buildTarget": "msal-angular-tutorial:build:production"
+              "buildTarget": "entra-id-group-protected-spa-client:build:production"
             },
             "development": {
-              "buildTarget": "msal-angular-tutorial:build:development"
+              "buildTarget": "entra-id-group-protected-spa-client:build:development"
             }
           },
           "defaultConfiguration": "development"
