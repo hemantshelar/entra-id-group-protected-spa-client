@@ -26,4 +26,14 @@ jobs:
           run: npm install
         - name: Build Angular
           run: npm run build
+
+        - name: Deploy to Azure webapp
+          uses: azure/webapps-deploy@v2
+          with:
+            app-name: 'webspa-dev-p01-aae'
+            package: ./entra-id-group-protected-spa-client/dist/entra-id-group-protected-spa-client
+#https://learn.microsoft.com/en-us/azure/developer/github/connect-from-azure-secret
+
+
+
         
